@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Jose",
+    "surname": "Faci",
+    "number": 555555555,
+    "registerDate": "2023-01-31",
+    "vip": true
+  },
+  {
+    "id": 3,
+    "name": "Alberto",
+    "surname": "Gimeno",
+    "number": 6440205,
+    "registerDate": "2023-01-01",
+    "vip": false
+  },
+  {
+    "id": 4,
+    "name": "Borrar",
+    "surname": "Cliente",
+    "number": 6440205,
+    "registerDate": "2023-01-01",
+    "vip": false
+  },
+  {
+    "id": 6,
+    "name": "Cliente",
+    "surname": "VIP",
+    "number": 6440205,
+    "registerDate": "2023-01-01",
+    "vip": true
+  },
+  {
+    "id": 7,
+    "name": "Cliente",
+    "surname": "VIP 2",
+    "number": 6440205,
+    "registerDate": "2023-01-01",
+    "vip": true
+  },
+  {
+    "id": 8,
+    "name": "Jose",
+    "surname": "VIP 2",
+    "number": 6440205,
+    "registerDate": "2023-01-01",
+    "vip": true
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "statusCode": 400,
+  "message": "Bad Request",
+  "errors": {
+    "number": "<-- Este campo solo puede contener números positivos y 0",
+    "surname": "<-- Este campo no puede estar vacio",
+    "name": "<-- Este campo no puede estar vacio"
+  }
+}
