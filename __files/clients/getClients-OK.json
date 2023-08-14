@@ -46,5 +46,14 @@
     "number": 6440205,
     "registerDate": "2023-01-01",
     "vip": true
+  },
+
+  {
+    "id": 10,
+    "name": "Alejandro",
+    "surname": "Romero",
+    "number": 6440205,
+    "registerDate": "2023-01-01",
+    "vip": "false"
   }
 ]

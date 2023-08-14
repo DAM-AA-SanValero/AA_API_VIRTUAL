@@ -1,5 +1,4 @@
 {
-  "statusCode": 404,
-  "message": "Client not found",
-  "errors": null
+  "internalError": 1,
+  "message": "Client not found"
 }
