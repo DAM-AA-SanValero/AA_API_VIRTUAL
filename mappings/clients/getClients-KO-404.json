@@ -2,13 +2,13 @@
   "priority": 1,
   "request": {
     "method": "GET",
-    "urlPattern": "/clients/['']*"
+    "urlPattern": "/clients404"
   },
   "response": {
-    "status": 400,
+    "status": 404,
     "headers": {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "clients/getClient-KO-400.json"
+    "bodyFileName": "clients/getClients-KO-404.json"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/clients/1",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"name\":\"\",\"surname\":\"Campos\",\"number\":768987323}",
+        "jsonCompareMode": "STRICT"
+      }
+    ]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "clients/putClient-KO-400.json"
+  }
+}

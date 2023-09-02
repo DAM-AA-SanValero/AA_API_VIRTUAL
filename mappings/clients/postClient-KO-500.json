@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/clients500"
+    },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "clients/postClient-KO-500.json"
+  }
+}

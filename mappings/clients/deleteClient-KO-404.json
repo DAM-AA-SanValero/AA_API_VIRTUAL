@@ -2,7 +2,7 @@
   "priority": 2,
   "request": {
     "method": "DELETE",
-    "url": "/clients/9"
+    "url": "/clients/10"
   },
   "response": {
     "status": 404,

@@ -1,7 +1,13 @@
 {
   "request": {
     "method": "POST",
-    "url": "/clients"
+    "url": "/clients",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"name\":\"Alejandra\",\"surname\":\"Campos\",\"number\":768987323}",
+        "jsonCompareMode": "STRICT"
+      }
+    ]
   },
   "response": {
     "status": 201,

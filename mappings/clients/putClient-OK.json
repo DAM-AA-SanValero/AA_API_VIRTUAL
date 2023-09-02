@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/centro/([0-9]*)",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"name\":\"Helena\",\"surname\":\"Vela\",\"number\":987654321}",
+        "jsonCompareMode": "STRICT"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "clients/putClient-OK.json"
+  }
+}
