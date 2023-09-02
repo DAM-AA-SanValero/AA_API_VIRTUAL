@@ -1,10 +1,11 @@
 {
+  "priority": 1,
   "request": {
     "method": "POST",
     "url": "/clients",
     "bodyPatterns": [
       {
-      "equalToJson": "{\"name\":\"\",\"surname\":\"Campos\",\"number\":768987323}",
+      "equalToJson": "{\"name\":\"\",\"surname\":\"\",\"number\":768987323}",
       "jsonCompareMode": "STRICT"
       }
     ]

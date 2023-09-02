@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/discounts500"
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "discounts/getDiscounts-KO-500.json"
+  }
+}

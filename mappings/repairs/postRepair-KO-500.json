@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/repairs500"
+    },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "repairs/postRepair-KO-500.json"
+  }
+}

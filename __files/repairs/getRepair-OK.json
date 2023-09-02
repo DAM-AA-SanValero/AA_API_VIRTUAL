@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "component": "Ventilador",
+  "price": 29.99,
+  "shippingAddress": "Avenida San Jose",
+  "shipmentDate": "2022-12-13",
+  "repairedDate": null,
+  "product_id": null,
+  "technician_id": null
+}

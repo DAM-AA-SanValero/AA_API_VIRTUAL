@@ -1,0 +1,14 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "PUT",
+    "url": "/products/20"
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "products/putProduct-KO-404.json"
+  }
+}

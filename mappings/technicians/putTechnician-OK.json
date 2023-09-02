@@ -1,0 +1,14 @@
+{
+
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/technicians/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "technicians/putTechnician-OK.json"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "component": "Ventilador",
+    "price": 29.99,
+    "shippingAddress": "Avenida San Jose",
+    "shipmentDate": "2022-12-13",
+    "repairedDate": null,
+    "product_id": null,
+    "technician_id": null
+  },
+  {
+    "id": 2,
+    "component": "Placa base",
+    "price": 39.99,
+    "shippingAddress": "Calle Violeta Parra",
+    "shipmentDate": "2022-12-13",
+    "repairedDate": null,
+    "product_id": null,
+    "technician_id": null
+  },
+  {
+    "id": 3,
+    "component": "Tarjea Gráfica",
+    "price": 59.99,
+    "shippingAddress": "Calle Alfonso X",
+    "shipmentDate": "2023-08-12",
+    "repairedDate": null,
+    "product_id": null,
+    "technician_id": null
+  }
+]

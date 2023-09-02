@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "product": "Xiaomi",
+  "event": "Black Friday",
+  "discounted": -5.99,
+  "startDiscount": "2023-01-20",
+  "endDiscount": "2023-01-29"
+}

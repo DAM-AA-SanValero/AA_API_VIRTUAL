@@ -1,0 +1,14 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "DELETE",
+    "url": "/discounts/999"
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "discounts/deleteDiscount-KO-500.json"
+  }
+}

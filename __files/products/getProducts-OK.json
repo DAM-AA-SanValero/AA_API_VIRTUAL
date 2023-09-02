@@ -1,0 +1,32 @@
+[
+  {
+    "id": 4,
+    "name": "Nintendo Switch",
+    "type": "Consola",
+    "price": 299.99,
+    "origin": "Japan",
+    "inStock": true,
+    "client_id": null,
+    "discount_id": null
+  },
+  {
+    "id": 5,
+    "name": "Oppo 18",
+    "type": "Movil",
+    "price": 199.99,
+    "origin": "Japan",
+    "inStock": false,
+    "client_id": null,
+    "discount_id": null
+  },
+  {
+    "id": 6,
+    "name": "Crash Bandicoot",
+    "type": "Videojuegos",
+    "price": 29.99,
+    "origin": "Europe",
+    "inStock": true,
+    "client_id": null,
+    "discount_id": null
+  }
+]

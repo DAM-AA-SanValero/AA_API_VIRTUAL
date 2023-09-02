@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/products500"
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "products/getProducts-KO-500.json"
+  }
+}

@@ -2,13 +2,7 @@
   "priority": 1,
   "request": {
     "method": "PUT",
-    "urlPattern": "/clients/11",
-    "bodyPatterns": [
-      {
-        "equalToJson": "{\"name\":\"Luis\",\"surname\":\"Campos\",\"number\":768987323}",
-        "jsonCompareMode": "STRICT"
-      }
-    ]
+    "url": "/clients/20"
   },
   "response": {
     "status": 400,

@@ -1,0 +1,21 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/discounts/([0-9]*)",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"product\":\"\",\"event\":\"Christmas\",\"discounted\":-7.87,\"startDiscount\":\"2023-12-25\",\"endDiscount\":\"2024-01-07\"}",
+
+        "jsonCompareMode": "STRICT"
+      }
+    ]
+},
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "discounts/putDiscount-KO-400.json"
+  }
+}

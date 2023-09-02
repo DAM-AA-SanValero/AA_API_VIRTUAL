@@ -1,0 +1,14 @@
+{
+
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/repairs/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "repairs/putRepair-OK.json"
+  }
+}

@@ -1,13 +1,8 @@
 {
+
   "request": {
     "method": "PUT",
-    "urlPattern": "/centro/([0-9]*)",
-    "bodyPatterns": [
-      {
-        "equalToJson": "{\"name\":\"Helena\",\"surname\":\"Vela\",\"number\":987654321}",
-        "jsonCompareMode": "STRICT"
-      }
-    ]
+    "urlPattern": "/clients/([0-9]*)"
   },
   "response": {
     "status": 200,

@@ -1,7 +1,8 @@
 {
+  "priority": 1,
   "request": {
     "method": "PUT",
-    "url": "/clients999"
+    "url": "/clients/500"
   },
   "response": {
     "status": 500,
