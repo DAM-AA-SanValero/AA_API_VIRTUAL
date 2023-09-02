@@ -12,7 +12,18 @@
 					"name": "clients OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients"
+							]
+						}
 					},
 					"response": []
 				},
@@ -20,7 +31,18 @@
 					"name": "clients KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -28,7 +50,18 @@
 					"name": "clients KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -36,128 +69,6 @@
 					"name": "client OK",
 					"request": {
 						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "client KO 404",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "client KO 500",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "client OK 201",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": ""
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "client KO 400",
-					"request": {
-						"method": "POST",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "client KO 500",
-					"request": {
-						"method": "POST",
-						"header": []
-					},
-					"response": []
-				},
-				{
-					"name": "client OK 204",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/clients/10",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"clients",
-								"10"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "client KO 404",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/clients/10",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"clients",
-								"10"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "client KO 500",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/clients/999",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"clients",
-								"10"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "client OK 200",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": ""
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "client KO 400",
-					"request": {
-						"method": "PUT",
 						"header": [],
 						"url": {
 							"raw": "http://localhost:8080/clients/1",
@@ -177,10 +88,10 @@
 				{
 					"name": "client KO 404",
 					"request": {
-						"method": "PUT",
+						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/11",
+							"raw": "http://localhost:8080/clients/404",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -188,7 +99,7 @@
 							"port": "8080",
 							"path": [
 								"clients",
-								"11"
+								"404"
 							]
 						}
 					},
@@ -197,7 +108,142 @@
 				{
 					"name": "client KO 500",
 					"request": {
-						"method": "PUT",
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients/500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client OK 201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Alejandra\",\r\n    \"surname\":\"Campos\",\r\n    \"number\":768987323,\r\n    \"registerDate\": \"2023-01-01\",\r\n    \"vip\": \"false\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client KO 400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"\",\r\n    \"surname\":\"\",\r\n    \"number\":768987323\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client KO 500",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client OK 204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client KO 404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client KO 500",
+					"request": {
+						"method": "DELETE",
 						"header": [],
 						"url": {
 							"raw": "http://localhost:8080/clients/999",
@@ -209,6 +255,104 @@
 							"path": [
 								"clients",
 								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client OK 200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Joserra\",\r\n    \"surname\": \"Gimeno\",\r\n    \"number\": 9234567891,\r\n    \"registerDate\": \"2023-01-31\",\r\n    \"vip\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clients/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client KO 400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"\",\r\n    \"surname\": \"Gimeno\",\r\n    \"number\": 9234567891,\r\n    \"registerDate\": \"2023-01-31\",\r\n    \"vip\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clients/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client KO 404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client KO 500",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients/500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"500"
 							]
 						}
 					},
@@ -223,7 +367,18 @@
 					"name": "discounts OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/discounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts"
+							]
+						}
 					},
 					"response": []
 				},
@@ -231,7 +386,18 @@
 					"name": "discounts KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/discounts404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -239,7 +405,18 @@
 					"name": "discounts KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/discounts500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -247,7 +424,19 @@
 					"name": "discount OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/discounts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -255,7 +444,19 @@
 					"name": "discount KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/discounts/404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts",
+								"404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -263,7 +464,19 @@
 					"name": "discount KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/discounts/500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts",
+								"500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -272,8 +485,25 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"product\": \"Playstation 5\",\r\n  \"event\": \"Summer fest\",\r\n  \"discounted\": -99.99,\r\n  \"startDiscount\": \"2024-06-29\",\r\n  \"endDiscount\": \"2024-08-29\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/discounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts"
+							]
 						}
 					},
 					"response": []
@@ -282,7 +512,27 @@
 					"name": "discount KO 400",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"product\": \"\",\r\n  \"event\": \"\",\r\n  \"discounted\": -8.67\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/discounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts"
+							]
+						}
 					},
 					"response": []
 				},
@@ -290,7 +540,18 @@
 					"name": "discount KO 500",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/discounts500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -300,15 +561,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/discounts/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"discounts",
+								"2"
 							]
 						}
 					},
@@ -320,15 +581,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/discounts/15",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"discounts",
+								"15"
 							]
 						}
 					},
@@ -340,15 +601,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/discounts/999",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"discounts",
+								"999"
 							]
 						}
 					},
@@ -359,8 +620,26 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"product\": \"Huawei 11 Pro\",\r\n  \"event\": \"Navidad\",\r\n  \"discounted\": -19.99,\r\n  \"startDiscount\": \"2023-12-22\",\r\n  \"endDiscount\": \"2024-01-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/discounts/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"discounts",
+								"2"
+							]
 						}
 					},
 					"response": []
@@ -370,16 +649,25 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"product\": \"\",\r\n  \"event\": \"Christmas\",\r\n  \"discounted\": -7.87,\r\n  \"startDiscount\": \"2023-12-25\",\r\n  \"endDiscount\": \"2024-01-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8080/clients/1",
+							"raw": "http://localhost:8080/discounts/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"1"
+								"discounts",
+								"2"
 							]
 						}
 					},
@@ -391,15 +679,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/11",
+							"raw": "http://localhost:8080/discounts/20",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"11"
+								"discounts",
+								"20"
 							]
 						}
 					},
@@ -411,15 +699,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/999",
+							"raw": "http://localhost:8080/discounts/500",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"999"
+								"discounts",
+								"500"
 							]
 						}
 					},
@@ -434,7 +722,18 @@
 					"name": "products OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
 					},
 					"response": []
 				},
@@ -442,7 +741,18 @@
 					"name": "products KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -450,7 +760,18 @@
 					"name": "products KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -458,7 +779,19 @@
 					"name": "product OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"4"
+							]
+						}
 					},
 					"response": []
 				},
@@ -466,7 +799,19 @@
 					"name": "product KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -474,7 +819,19 @@
 					"name": "product KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -483,8 +840,25 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"PACMAN\",\r\n  \"type\": \"Videojuegos\",\r\n  \"price\": 29.99,\r\n  \"origin\": \"Europe\",\r\n  \"inStock\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
 						}
 					},
 					"response": []
@@ -493,7 +867,27 @@
 					"name": "product KO 400",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"\",\r\n  \"type\": \"Videojuegos\",\r\n  \"price\": 29.99,\r\n  \"origin\": \"Europe\",\r\n  \"inStock\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
 					},
 					"response": []
 				},
@@ -501,7 +895,18 @@
 					"name": "product KO 500",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -511,15 +916,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/products/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"products",
+								"5"
 							]
 						}
 					},
@@ -531,15 +936,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/products/15",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"products",
+								"15"
 							]
 						}
 					},
@@ -551,15 +956,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/products/999",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"products",
+								"999"
 							]
 						}
 					},
@@ -570,8 +975,26 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Crash Bandicoot\",\r\n  \"type\": \"Videojuegos\",\r\n  \"price\": 29.99,\r\n  \"origin\": \"Europe\",\r\n  \"inStock\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"6"
+							]
 						}
 					},
 					"response": []
@@ -581,16 +1004,25 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"\",\r\n  \"type\": \"\",\r\n  \"price\": 29.99,\r\n  \"origin\": \"Europe\",\r\n  \"inStock\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8080/clients/1",
+							"raw": "http://localhost:8080/products/6",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"1"
+								"products",
+								"6"
 							]
 						}
 					},
@@ -602,15 +1034,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/11",
+							"raw": "http://localhost:8080/products/20",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"11"
+								"products",
+								"20"
 							]
 						}
 					},
@@ -622,15 +1054,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/999",
+							"raw": "http://localhost:8080/products/500",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"999"
+								"products",
+								"500"
 							]
 						}
 					},
@@ -645,7 +1077,18 @@
 					"name": "repairs OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repairs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs"
+							]
+						}
 					},
 					"response": []
 				},
@@ -653,7 +1096,18 @@
 					"name": "repairs KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repairs404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -661,7 +1115,18 @@
 					"name": "repairs KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repairs500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -669,7 +1134,19 @@
 					"name": "repair OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repairs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -677,7 +1154,19 @@
 					"name": "repair KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repairs/404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs",
+								"404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -685,7 +1174,19 @@
 					"name": "repair KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repairs/500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs",
+								"500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -694,8 +1195,25 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"component\": \"RAM\",\r\n  \"price\": 29.99,\r\n  \"shippingAddress\": \"Calle Don Jaime\",\r\n  \"shipmentDate\": \"2023-06-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/repairs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs"
+							]
 						}
 					},
 					"response": []
@@ -704,7 +1222,27 @@
 					"name": "repair KO 400",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"component\": \"\",\r\n        \"price\": 59.99,\r\n        \"shippingAddress\": \"Calle Alfonso X\",\r\n        \"shipmentDate\": \"2023-12-13\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/repairs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs"
+							]
+						}
 					},
 					"response": []
 				},
@@ -712,7 +1250,18 @@
 					"name": "repair KO 500",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repairs500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -722,15 +1271,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/repairs/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"repairs",
+								"2"
 							]
 						}
 					},
@@ -742,15 +1291,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/repairs/15",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"repairs",
+								"15"
 							]
 						}
 					},
@@ -762,15 +1311,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/repairs/999",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"repairs",
+								"999"
 							]
 						}
 					},
@@ -781,8 +1330,26 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"component\": \"Placa base\",\r\n  \"price\": 39.99,\r\n  \"shippingAddress\": \"Cesario Alierta 40\",\r\n  \"shipmentDate\": \"2022-12-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/repairs/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repairs",
+								"2"
+							]
 						}
 					},
 					"response": []
@@ -792,16 +1359,25 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"component\": \"\",\r\n  \"price\": 39.99,\r\n  \"shippingAddress\": \"Cesario Alierta 40\",\r\n  \"shipmentDate\": \"2022-12-13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8080/clients/1",
+							"raw": "http://localhost:8080/repairs/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"1"
+								"repairs",
+								"2"
 							]
 						}
 					},
@@ -813,15 +1389,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/11",
+							"raw": "http://localhost:8080/repairs/20",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"11"
+								"repairs",
+								"20"
 							]
 						}
 					},
@@ -833,15 +1409,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/999",
+							"raw": "http://localhost:8080/repairs/500",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"999"
+								"repairs",
+								"500"
 							]
 						}
 					},
@@ -856,7 +1432,18 @@
 					"name": "technicians OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/technicians",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians"
+							]
+						}
 					},
 					"response": []
 				},
@@ -864,7 +1451,18 @@
 					"name": "technicians KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/technicians404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -872,7 +1470,18 @@
 					"name": "technicians KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/technicians500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -880,7 +1489,19 @@
 					"name": "technician OK",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/technicians/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians",
+								"4"
+							]
+						}
 					},
 					"response": []
 				},
@@ -888,7 +1509,19 @@
 					"name": "technician KO 404",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/technicians/404",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians",
+								"404"
+							]
+						}
 					},
 					"response": []
 				},
@@ -896,7 +1529,19 @@
 					"name": "technician KO 500",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/technicians/500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians",
+								"500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -905,8 +1550,25 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"Miguel\",\r\n        \"surname\": \"Rios\",\r\n        \"number\": 123456789,\r\n        \"department\": \"Servidores\",\r\n        \"available\": false\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/technicians",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians"
+							]
 						}
 					},
 					"response": []
@@ -915,7 +1577,27 @@
 					"name": "technician KO 400",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"\",\r\n        \"surname\": \"Rios\",\r\n        \"number\": 123456789,\r\n        \"department\": \"Servidores\",\r\n        \"available\": false\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/technicians",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians"
+							]
+						}
 					},
 					"response": []
 				},
@@ -923,7 +1605,18 @@
 					"name": "technician KO 500",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/technicians500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians500"
+							]
+						}
 					},
 					"response": []
 				},
@@ -933,15 +1626,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/technicians/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"technicians",
+								"2"
 							]
 						}
 					},
@@ -953,15 +1646,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/technicians/15",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"technicians",
+								"15"
 							]
 						}
 					},
@@ -973,15 +1666,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/10",
+							"raw": "http://localhost:8080/technicians/999",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"10"
+								"technicians",
+								"999"
 							]
 						}
 					},
@@ -992,8 +1685,26 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " \"id\": 1,\r\n  \"name\": \"Santi\",\r\n  \"surname\": \"Murillo\",\r\n  \"number\": 633086205,\r\n  \"department\": \"IT\",\r\n  \"available\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/technicians/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"technicians",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -1003,15 +1714,24 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"\",\r\n  \"surname\": \"\",\r\n  \"number\": 633086205,\r\n  \"department\": \"\",\r\n  \"available\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8080/clients/1",
+							"raw": "http://localhost:8080/technicians/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
+								"technicians",
 								"1"
 							]
 						}
@@ -1024,15 +1744,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/11",
+							"raw": "http://localhost:8080/technicians/20",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"11"
+								"technicians",
+								"20"
 							]
 						}
 					},
@@ -1044,15 +1764,15 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/clients/999",
+							"raw": "http://localhost:8080/technicians/500",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clients",
-								"999"
+								"technicians",
+								"500"
 							]
 						}
 					},
