@@ -1,0 +1,10 @@
+{
+  "id": 4,
+  "name": "Nintendo Switch",
+  "type": "Consola",
+  "price": 299.99,
+  "origin": "Japan",
+  "inStock": true,
+  "client_id": null,
+  "discount_id": null
+}

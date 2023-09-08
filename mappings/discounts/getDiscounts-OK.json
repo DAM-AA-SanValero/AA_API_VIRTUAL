@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/discounts"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "discounts/getDiscounts-OK.json"
+  }
+}

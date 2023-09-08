@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/clients500"
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "clients/getClients-KO-500.json"
+  }
+}

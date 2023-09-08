@@ -1,0 +1,20 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/repairs/([0-9]*)",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"component\":\"\",\"price\":39.99,\"shippingAddress\":\"Cesario Alierta 40\",\"shipmentDate\":\"2022-12-13\"}",
+        "jsonCompareMode": "STRICT"
+      }
+    ]
+},
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "repairs/putRepair-KO-400.json"
+  }
+}

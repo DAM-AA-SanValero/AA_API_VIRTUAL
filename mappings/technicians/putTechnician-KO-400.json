@@ -1,0 +1,20 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/technicians/([0-9]*)",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"name\":\"\",\"surname\":\"\",\"number\":633086205,\"department\":\"\",\"available\":true}",
+        "jsonCompareMode": "STRICT"
+      }
+    ]
+},
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "technicians/putTechnician-KO-400.json"
+  }
+}

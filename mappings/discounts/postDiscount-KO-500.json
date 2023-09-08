@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/discounts500"
+    },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "discounts/postDiscount-KO-500.json"
+  }
+}

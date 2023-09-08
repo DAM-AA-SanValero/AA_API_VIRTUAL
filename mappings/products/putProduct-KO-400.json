@@ -1,0 +1,20 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/products/([0-9]*)",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"name\":\"\",\"type\":\"\",\"price\":29.99,\"origin\":\"Europe\",\"inStock\":false}",
+        "jsonCompareMode": "STRICT"
+      }
+    ]
+},
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "products/putProduct-KO-400.json"
+  }
+}

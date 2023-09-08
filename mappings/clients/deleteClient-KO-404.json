@@ -1,0 +1,14 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "DELETE",
+    "url": "/clients/15"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "clients/deleteClient-KO-404.json"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/technicians500"
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "technicians/getTechnicians-KO-500.json"
+  }
+}

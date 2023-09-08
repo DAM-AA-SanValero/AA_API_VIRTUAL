@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Santi",
+    "surname": "Murillo",
+    "number": 633086205,
+    "department": "IT",
+    "available": false
+  },
+  {
+    "id": 2,
+    "name": "Sandra",
+    "surname": "Pérez",
+    "number": 765432678,
+    "department": "Redes",
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Jorge",
+    "surname": "Gimeno",
+    "number": 876543987,
+    "department": "Servidores",
+    "available": true
+  }
+]
