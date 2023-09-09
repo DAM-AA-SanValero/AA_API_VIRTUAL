@@ -10,8 +10,3 @@ como **GET**, **POST**, **DELETE** y **PUT**.
 * Se añadido una **colección Postman** de todas las clases con sus Casos de Uso mencionados.
 
 https://github.com/Joserra2304/AA_API_VIRTUAL.git
-
-* **API REACTIVA**: API conectada a la base de datos no relacional **MongoDB**,
-  que cambia aspectos de la API normal utilizando **Webflux**. Se hizo una **colección Postman** de cada clase.
-
-https://github.com/Joserra2304/AA_API_REACTIVA
